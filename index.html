@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">Navbar</span>
+      <button type="button" id="adddata" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+        Data</button>
+
+    </div>
+  </nav>
+
+  <table class="table">
+    <thead>
+      
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Age</th>
+        <th scope="col">Phone No</th>
+         <th scope="col">edit</th>
+        <th scope="col">delete</th>
+      
+    </thead>
+    <tbody id="table"></tbody>
+  </table>
+
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <form name="forms" class="w-100">
+            <div class="form-label w-75 mt-2 m-auto">
+              <input class="form-control" type="text" name="name" placeholder="Enter the Name" required />
+            </div>
+            <div class="form-label w-75 mt-2 m-auto">
+              <input class="form-control" type="email" name="email" placeholder="Enter the Email" required />
+            </div>
+            <div class="form-label w-75 mt-2 m-auto">
+              <input class="form-control" type="password" name="password" placeholder="Enter the password" required />
+            </div>
+            <div class="form-label w-75 mt-2 m-auto">
+              <input class="form-control" type="number" name="age" placeholder="Enter the Age" required />
+            </div>
+            <div class="form-label w-75 mt-2 m-auto">
+              <input class="form-control" type="text" name="phone" placeholder="Enter the phone No" required />
+            </div>
+            <button  class="btn btn-outline-success w-75  m-auto d-block mt-2"   id="c">Submit</button>
+            <button  class="btn btn-outline-primary w-75  m-auto d-block mt-2"   id="d">Update</button>
+
+               <div class=" ms-5">
+              
+               </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <script src="Index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
